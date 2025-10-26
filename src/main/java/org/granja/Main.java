@@ -1,10 +1,12 @@
 package org.granja;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * Clase principal del proyecto Granja Inteligente
+ * Punto de entrada de la aplicación
+ */
 public class Main {
     public static void main(String[] args) {
-
-
+        // Ejecutar la demostración completa de patrones comportamentales
+        DemoPatronesComportamentales.main(args);
     }
 }
