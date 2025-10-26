@@ -1,9 +1,9 @@
-package org.granja;
+package org.granja.comportamentales;
 
-import org.granja.Observer.*;
-import org.granja.Strategy.*;
-import org.granja.command.*;
-import org.granja.state.*;
+import org.granja.comportamentales.observer.*;
+import org.granja.comportamentales.strategy.*;
+import org.granja.comportamentales.command.*;
+import org.granja.comportamentales.state.*;
 
 /**
  * Clase de demostración que integra todos los patrones comportamentales

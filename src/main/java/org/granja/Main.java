@@ -1,5 +1,7 @@
 package org.granja;
 
+import org.granja.comportamentales.DemoPatronesComportamentales;
+
 /**
  * Clase principal del proyecto Granja Inteligente
  * Punto de entrada de la aplicación

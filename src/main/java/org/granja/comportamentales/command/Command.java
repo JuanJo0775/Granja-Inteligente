@@ -1,4 +1,4 @@
-package org.granja.command;
+package org.granja.comportamentales.command;
 
 /**
  * Interfaz Command del patrón Command

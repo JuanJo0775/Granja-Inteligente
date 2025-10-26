@@ -1,4 +1,4 @@
-package org.granja.command;
+package org.granja.comportamentales.command;
 
 /**
  * Comando concreto: Dispensar Alimento

@@ -1,4 +1,4 @@
-package org.granja.Strategy;
+package org.granja.comportamentales.strategy;
 
 /**
  * Context del patrón Strategy

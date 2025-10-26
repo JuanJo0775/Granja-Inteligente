@@ -1,4 +1,4 @@
-package org.granja.state;
+package org.granja.comportamentales.state;
 
 /**
  * Interfaz State del patrón State

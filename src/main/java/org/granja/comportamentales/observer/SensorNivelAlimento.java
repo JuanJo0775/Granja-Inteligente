@@ -1,4 +1,4 @@
-package org.granja.Observer;
+package org.granja.comportamentales.observer;
 
 /**
  * Subject concreto: Sensor de Nivel de Alimento

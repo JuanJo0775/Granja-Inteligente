@@ -1,4 +1,4 @@
-package org.granja.command;
+package org.granja.comportamentales.command;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
