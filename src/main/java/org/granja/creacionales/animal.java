@@ -1,7 +1,7 @@
 package org.granja.creacionales;
 
 //Patron factory method
-interface Animal {
+public interface Animal {
     void comer();
 }
 
