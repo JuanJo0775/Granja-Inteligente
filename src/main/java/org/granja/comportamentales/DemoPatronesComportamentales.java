@@ -1,9 +1,13 @@
 package org.granja.comportamentales;
 
-import org.granja.comportamentales.observer.*;
-import org.granja.comportamentales.strategy.*;
 import org.granja.comportamentales.command.*;
-import org.granja.comportamentales.state.*;
+import org.granja.comportamentales.observer.Observer;
+import org.granja.comportamentales.observer.SensorNivelAlimento;
+import org.granja.comportamentales.observer.SistemaAlertas;
+import org.granja.comportamentales.observer.SistemaAlimentacion;
+import org.granja.comportamentales.state.Animal;
+import org.granja.comportamentales.state.EstadoEnfermo;
+import org.granja.comportamentales.strategy.GestorAlimentacion;
 
 /**
  * Clase de demostración que integra todos los patrones comportamentales

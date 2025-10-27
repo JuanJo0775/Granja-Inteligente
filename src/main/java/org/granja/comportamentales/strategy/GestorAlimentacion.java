@@ -1,12 +1,13 @@
 package org.granja.comportamentales.strategy;
 
 /**
- * Context del patrón Strategy
- * Gestiona la alimentación aplicando diferentes estrategias en tiempo de ejecución
+ * Contexto del patrón Strategy.
+ * Gestiona la alimentación aplicando diferentes estrategias en tiempo de ejecución.
  */
 public class GestorAlimentacion {
+
     private EstrategiaAlimentacion estrategia;
-    private String nombreCorral;
+    private final String nombreCorral;
 
     public GestorAlimentacion(String nombreCorral) {
         this.nombreCorral = nombreCorral;
@@ -15,7 +16,7 @@ public class GestorAlimentacion {
     }
 
     /**
-     * Cambia la estrategia de alimentación en tiempo de ejecución
+     * Cambia la estrategia de alimentación en tiempo de ejecución.
      */
     public void setEstrategia(EstrategiaAlimentacion estrategia) {
         this.estrategia = estrategia;
@@ -24,7 +25,7 @@ public class GestorAlimentacion {
     }
 
     /**
-     * Ejecuta la alimentación con la estrategia actual
+     * Ejecuta la alimentación con la estrategia actual.
      */
     public void alimentar(double cantidadBase, int frecuenciaBase) {
         System.out.println("\n🍽️  [" + nombreCorral + "] Ejecutando alimentación...");
@@ -40,21 +41,23 @@ public class GestorAlimentacion {
     }
 
     /**
-     * Método auxiliar para cambiar estrategia según estación (simplifica el uso)
+     * Método auxiliar para cambiar estrategia según estación (simplifica el uso).
      */
     public void cambiarEstacion(String estacion) {
-        switch (estacion.toLowerCase()) {
-            case "invierno":
-                setEstrategia(new EstrategiaInvierno());
-                break;
-            case "verano":
-                setEstrategia(new EstrategiaVerano());
-                break;
-            case "ahorro":
-                setEstrategia(new EstrategiaAhorro());
-                break;
-            default:
-                System.out.println("⚠️  Estación no reconocida. Manteniendo estrategia actual.");
+        if (estacion == null) {
+            System.out.println("⚠️  Estación no válida (nula).");
+            return;
         }
+
+        switch (estacion.toLowerCase()) {
+            case "invierno" -> setEstrategia(new EstrategiaInvierno());
+            case "verano" -> setEstrategia(new EstrategiaVerano());
+            case "ahorro" -> setEstrategia(new EstrategiaAhorro());
+            default -> System.out.println("⚠️  Estación no reconocida. Manteniendo estrategia actual.");
+        }
+    }
+
+    public EstrategiaAlimentacion getEstrategia() {
+        return estrategia;
     }
 }
